@@ -1,4 +1,4 @@
-package com.bridgelabz.addressbooksystem;
+package com.bridgelabz.addressbookmanagementsystem;
 
 import java.util.List;
 
@@ -22,13 +22,13 @@ public class AddressBookTest {
 		ContactPerson person = new ContactPerson();
 		Address address = new Address();
 		
-		String firstName = "Uma";
-		String lastName = "Kamuni";
-		String email = "uma@gmail.com";
-		long phoneNumber = 908476387;
-		String city = "Solapur";
-		String state = "Maharashra";
-		long zipCode = 413005;
+		String firstName = "Ashika";
+		String lastName = "Satish";
+		String email = "ashika@gmail.com";
+		long phoneNumber = 938476387;
+		String city = "Bangalore";
+		String state = "Karnataka";
+		long zipCode = 560043;
 		person.setFirstName(firstName);
 		person.setLastName(lastName);
 		person.setEmail(email);
