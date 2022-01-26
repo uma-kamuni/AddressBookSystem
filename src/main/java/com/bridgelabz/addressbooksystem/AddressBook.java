@@ -378,16 +378,24 @@ public class AddressBook implements AddressBookIF {
              CSVReader csvReader = new CSVReaderBuilder(reader).withSkipLines(1).build();){
         	
             String[] nextRecord;
-            while ((nextRecord = csvReader.readNext()) != null) {
-                System.out.println("First Name = " + nextRecord[2]);
-                System.out.println("Last Name = " + nextRecord[3]);
-                System.out.println("City = " + nextRecord[0]);
-                System.out.println("State = " + nextRecord[5]);
-                System.out.println("Email = " + nextRecord[1]);
-                System.out.println("Phone Number = " + nextRecord[4]);
-                System.out.println("Zip Code = " + nextRecord[6]);
-                System.out.println("\n");
-            }
+            try {
+				while ((nextRecord = csvReader.readNext()) != null) {
+				    System.out.println("First Name = " + nextRecord[2]);
+				    System.out.println("Last Name = " + nextRecord[3]);
+				    System.out.println("City = " + nextRecord[0]);
+				    System.out.println("State = " + nextRecord[5]);
+				    System.out.println("Email = " + nextRecord[1]);
+				    System.out.println("Phone Number = " + nextRecord[4]);
+				    System.out.println("Zip Code = " + nextRecord[6]);
+				    System.out.println("\n");
+				}
+			} catch (com.opencsv.exceptions.CsvValidationException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
         }
     }
 

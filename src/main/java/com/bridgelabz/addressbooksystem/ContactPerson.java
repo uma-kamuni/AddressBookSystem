@@ -13,9 +13,6 @@ public class ContactPerson {
 	@CsvBindByName(column = "Email")
 	private String email;
 	
-	@CsvBindByName(column = "Address")
-	private String Address;
-	
 	@CsvBindByName(column = "Phone Number")
 	private long phoneNumber;
 	
@@ -70,14 +67,6 @@ public class ContactPerson {
 	
 	public long getZip() {
 		return zip;
-	}
-	
-	public String getAddress() {
-		return Address;
-	}
-	
-	public void setAddress(String Address) {
-		this.Address = Address;
 	}
 	
 	public void setCity(String city) {
