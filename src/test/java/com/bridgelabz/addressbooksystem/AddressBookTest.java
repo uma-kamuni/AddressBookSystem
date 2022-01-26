@@ -21,7 +21,6 @@ public class AddressBookTest {
 		
 		ContactPerson person = new ContactPerson();
 		
-		
 		String firstName = "Navina";
 		String lastName = "Satish";
 		String email = "uma@gmail.com";
@@ -41,7 +40,7 @@ public class AddressBookTest {
 		
 		firstName = "Uma";
 		lastName = "Kamuni";
-		email = "uma@gmail.com";
+		email = "umaa@gmail.com";
 		phoneNumber = 847648253;
 		city = "Mangalore";
 		state = "Karnataka";
