@@ -1,18 +1,16 @@
 package com.bridgelabz.addressbooksystem;
+import com.opencsv.bean.CsvBindByName;
 
 public class Address {
-
-	private String city, state;
+	
+	@CsvBindByName(column = "City")
+	private String city;
+	
+	@CsvBindByName(column = "State")
+	private String state;
+	
+	@CsvBindByName(column = "Zip Code")
 	private long zip;
-	private String address;
-
-	public String getAddress() {
-		return address;
-	}
-
-	public void setAddress(String address) {
-		this.address = address;
-	}
 
 	public String getCity() {
 		return city;
@@ -37,14 +35,6 @@ public class Address {
 	public void setZip(long zip) {
 		this.zip = zip;
 	}
-
-	@Override
-	public String toString() {
-
-		return ", City - " + city + ", State - " + state + ", Zip Code - " + zip;
-	}
-
-	public void setAddress(Address address2) {
-
-	}
+	
+	
 }

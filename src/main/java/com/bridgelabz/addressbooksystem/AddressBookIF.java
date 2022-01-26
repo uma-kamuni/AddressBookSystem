@@ -1,6 +1,7 @@
 package com.bridgelabz.addressbooksystem;
 
-import java.io.IOException;
+
+import java.io.IOException; 
 import java.util.List;
 import java.util.Scanner;
 
@@ -38,4 +39,8 @@ public interface AddressBookIF {
 	public void writeDataToCSV() throws IOException, CsvRequiredFieldEmptyException, CsvDataTypeMismatchException;
 	
 	public <CsvValidationException extends Throwable> void readDataFromCSV() throws IOException, CsvValidationException;
+
+	public void writeDataToJson() throws IOException;
+	
+	public void readDataFromJson() throws IOException;
 }
