@@ -1,5 +1,6 @@
 package com.bridgelabz.addressbooksystem;
 
+
 import com.opencsv.bean.CsvBindByName;
 
 public class ContactPerson {
