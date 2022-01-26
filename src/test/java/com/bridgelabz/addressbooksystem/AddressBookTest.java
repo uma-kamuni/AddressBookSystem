@@ -20,11 +20,11 @@ public class AddressBookTest {
 	public void givenDetails_ShouldAddToContactList() {
 		
 		ContactPerson person = new ContactPerson();
-		Address address = new Address();
 		
-		String firstName = "Ashika";
+		
+		String firstName = "Navina";
 		String lastName = "Satish";
-		String email = "ashika@gmail.com";
+		String email = "uma@gmail.com";
 		long phoneNumber = 938476387;
 		String city = "Bangalore";
 		String state = "Karnataka";
@@ -33,10 +33,9 @@ public class AddressBookTest {
 		person.setLastName(lastName);
 		person.setEmail(email);
 		person.setPhoneNumber(phoneNumber);
-		address.setCity(city);
-		address.setState(state);
-		address.setZip(zipCode);
-		person.setAddress(address);
+		person.setCity(city);
+		person.setState(state);
+		person.setZip(zipCode);
 		
 		addressBook.addContact(firstName, person);
 		
@@ -44,17 +43,16 @@ public class AddressBookTest {
 		lastName = "Kamuni";
 		email = "uma@gmail.com";
 		phoneNumber = 847648253;
-		city = "Solapur";
-		state = "Maharashtra";
-		zipCode = 413005;
+		city = "Mangalore";
+		state = "Karnataka";
+		zipCode = 560043;
 		person.setFirstName(firstName);
 		person.setLastName(lastName);
 		person.setEmail(email);
 		person.setPhoneNumber(phoneNumber);
-		address.setCity(city);
-		address.setState(state);
-		address.setZip(zipCode);
-		person.setAddress(address);
+		person.setCity(city);
+		person.setState(state);
+		person.setZip(zipCode);
 		
 		addressBook.addContact(firstName, person);
 		
