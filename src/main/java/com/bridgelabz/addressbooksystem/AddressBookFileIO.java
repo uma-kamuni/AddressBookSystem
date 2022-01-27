@@ -10,7 +10,6 @@ import java.util.Map;
 
 public class AddressBookFileIO {
 
-	
 	public void writeToAddressBookFile(String fileName, Map<String, ContactPerson> contactList) {
 
 		StringBuffer addressBookBuffer = new StringBuffer();
